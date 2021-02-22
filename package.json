@@ -27,8 +27,6 @@
     "release": "npm react-build && electron-builder --publish=always",
     "build": "npm react-build && npm electron-build",
     "start": "concurrently \"cross-env BROWSER=none npm run react-start\" \"wait-on http://localhost:3000 && electron .\"",
-    "pack": "electron-builder --dir",
-    "dist": "npx electron-builder"
   },
   "main": "public/electron.js",
   "homepage": "./",
